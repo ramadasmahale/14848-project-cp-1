@@ -75,5 +75,5 @@ Deployments ->
 
 Services -> 
 
-<img src="containers.png">
+<img src="services.png">
 
