@@ -3,12 +3,12 @@
 
 Here is the list of all docker images used for this project -
 
-Jupyter - https://hub.docker.com/r/jupyter/minimal-notebook
-Hadoop worker - https://hub.docker.com/r/bde2020/hadoop-datanode
-Hadoop master - https://hub.docker.com/r/bde2020/hadoop-namenode
-Spark - https://hub.docker.com/r/bitnami/spark
-Sonar - https://hub.docker.com/r/ramadasmahale/sonarscanner (My docker image)
-Cloud UI - https://hub.docker.com/r/ramadasmahale/cloud-gui (My docker image)
+1. Jupyter - https://hub.docker.com/r/jupyter/minimal-notebook
+2. Hadoop worker - https://hub.docker.com/r/bde2020/hadoop-datanode
+3. Hadoop master - https://hub.docker.com/r/bde2020/hadoop-namenode
+4. Spark - https://hub.docker.com/r/bitnami/spark
+5. Sonar - https://hub.docker.com/r/ramadasmahale/sonarscanner (My docker image)
+6. Cloud UI - https://hub.docker.com/r/ramadasmahale/cloud-gui (My docker image)
 
 ## Steps to deploy all the images ->
 
