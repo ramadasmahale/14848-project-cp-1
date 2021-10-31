@@ -58,7 +58,7 @@ All these deployments have been made on GCP's Kubernetes Engine. Hence, before g
 
 ### Hadoop worker
 1. Pull the cloud UI into GCP using - `docker pull bde2020/hadoop-datanode` . Tag the image according to GCP conventions and push to container registry
-2. Create a new deployment on GKE by selecting the above deployment.  While creating the deployment, set the env variable SERVICE_PRECONDITION to http://namenode-service:9000 (replace the namenode-service with the master node's service name). Also add all the environment variables in the `hadoop.env` file here.
+2. Create a new deployment on GKE by selecting the above deployment.  While creating the deployment, set the env variable SERVICE_PRECONDITION to http://namenode-service:9870 (replace the namenode-service with the master node's service name). Also add all the environment variables in the `hadoop.env` file here.
 3.  Make sure that you change number of replicas to 2 as that is the configuration we need for this project
 
 After both master and worker nodes are detailed above, we should see the following after navigating to the master node's service -
