@@ -7,7 +7,7 @@ Here is the list of all docker images used for this project -
 2. Hadoop worker - https://hub.docker.com/r/bde2020/hadoop-datanode
 3. Hadoop master - https://hub.docker.com/r/bde2020/hadoop-namenode
 4. Spark - https://hub.docker.com/r/bitnami/spark
-5. Sonar - https://hub.docker.com/r/ramadasmahale/sonarscanner (My docker image)
+5. Sonar - https://hub.docker.com/r/ramadasmahale/sonarscanner (My docker image) - (To build this docker image yourself, you need to download the zip from - https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-4.6.2.2472-linux.zip , unzp it and place it in the sonar folder. Couldn't upload the zip to github due to size restrictions)
 6. Cloud UI - https://hub.docker.com/r/ramadasmahale/cloud-gui (My docker image)
 
 ## Steps to deploy all the images ->
@@ -43,7 +43,7 @@ All these deployments have been made on GCP's Kubernetes Engine. Hence, before g
 
 ### Sonar
 
-1. Pull the cloud UI into GCP using - `docker pull ramadasmahale/sonarscanner` . Tag the image according to GCP conventions and push to container registry
+1. Pull the cloud UI into GCP using - `docker pull ramadasmahale/sonarscanner` . Tag the image according to GCP conventions and push to container registry.
 2. Create a new deployment on GKE by selecting the above deployment.  While creating the deployment, leave the default values as is.
 3. Once the deployment is created, expose this as a Loadbalancer service. Be sure to map port 9000 to required port(left to 9000 here) while creating the service.
 4. Once the service is created, navigate to the URL and you must see - 
